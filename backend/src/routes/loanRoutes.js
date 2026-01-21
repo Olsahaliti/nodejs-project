@@ -1,4 +1,8 @@
-app.use("/api/students", studentRoutes);
-app.use("/api/books", bookRoutes);
-app.use("/api/loans", loanRoutes);
-app.use("/api/stats", statsRoutes);
+const router = require("express").Router();
+const c = require("../controllers/loanController");
+
+router.get("/", c.getLoans);
+router.post("/borrow", c.borrow);
+router.put("/:id/return", c.returnBook);
+
+module.exports = router;

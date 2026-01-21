@@ -1,5 +1,16 @@
 const Book = require("../models/Book");
 const Loan = require("../models/Loan");
+
+
+// GET /api/loans
+async function getLoans(req, res) {
+  const loans = await Loan.find()
+    .populate("studentId", "fullName email")
+    .populate("bookId", "title author");
+  res.json(loans);
+}
+
+
 async function borrow(req, res) {
   const { studentId, bookId } = req.body;
   const book = await Book.findById(bookId);
@@ -31,4 +42,4 @@ async function returnBook(req, res) {
   }
   res.json({ message: "Returned successfully" });
 }
-module.exports = { borrow, returnBook };
+module.exports = { borrow, returnBook, getLoans };

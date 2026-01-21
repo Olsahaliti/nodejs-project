@@ -17,7 +17,6 @@ async function createStudent(req, res) {
   res.status(201).json(student);
 }
 
-id
 async function updateStudent(req, res) {
   const student = await Student.findByIdAndUpdate(
     req.params.id,
@@ -31,7 +30,6 @@ async function updateStudent(req, res) {
   res.json(student);
 }
 
-id
 async function deleteStudent(req, res) {
   const removed = await Student.findByIdAndDelete(req.params.id);
   if (!removed) {

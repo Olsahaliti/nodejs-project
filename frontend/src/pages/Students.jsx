@@ -5,7 +5,7 @@ export default function Students() {
   const [items, setItems] = useState([]);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
-}
+
   async function load()  {
     const res = await api.get("/students");
     setItems(res.data);
@@ -50,3 +50,4 @@ export default function Students() {
 
 
 
+}
