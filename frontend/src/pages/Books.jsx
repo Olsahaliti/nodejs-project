@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "../api/client";
-import '../App.css'
+import '../style/books.css'
 
 function Books() {
 
@@ -41,23 +41,23 @@ function Books() {
       <h2>📘 Books</h2>
 
       <form className="form" onSubmit={addBook}>
-        <input
+        <input className="title"
           placeholder="Book title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <input
+        <input className="author"
           placeholder="Author"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
-        <input
+        <input className="number"
           type="number"
           min="1"
           value={copies}
           onChange={(e) => setCopies(e.target.value)}
         />
-        <button>Add Book</button>
+        <button className="add">Add Book</button>
       </form>
 
       <table className="table">

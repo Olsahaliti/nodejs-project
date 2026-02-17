@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(74, 74, 158);
+    
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+.title{
+    background-color: rgb(3, 3, 60);
+    color: white;
+    margin: 5px;
+}
+
+.author{
+    background-color: rgb(3, 3, 60);
+    color: white;
+    margin: 5px;
+}
+
+.number{
+    background-color: rgb(3, 3, 60);
+    color: white;
+    margin: 5px;
+}
+
+.add{
+    background-color: rgb(3, 3, 60);
+    color: white;
+    margin: 5px;
+}
+
+
+

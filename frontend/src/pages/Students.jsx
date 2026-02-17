@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { api } from "../api/client";
-import '../App.css'
+import '../style/students.css'
 
 export default function Students() {
   const [items, setItems] = useState([]);
