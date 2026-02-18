@@ -9,7 +9,7 @@ export default function Dashboard() {
   }, []);
   if (!stats) return <p>Loading...</p>;
   return (
-    <div>
+    <div className="dashboard">
       <h2>Dashboard</h2>
       <ul>
         <li>Total students: {stats.totalStudents}</li>
