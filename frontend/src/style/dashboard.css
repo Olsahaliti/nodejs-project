@@ -11,4 +11,10 @@ body{
     background-color: rgb(3, 3, 60);
     color: white;
     box-shadow: 5px;
+    align-self: center;
+    margin-top: 150px;
+    padding: 50px; 
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
 }

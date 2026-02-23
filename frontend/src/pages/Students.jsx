@@ -27,14 +27,14 @@ export default function Students() {
   }
 
   return (
-    <div>
-      <h2>Students</h2>
-      <form onSubmit={addStudent} style={{ marginBottom: 12 }}>
-        <input value={fullName} onChange={e => setFullName(e.target.value)} placeholder="Full name" />
+    <div className="student">
+      <h1>Students</h1>
+      <form className="form1" onSubmit={addStudent} style={{ marginBottom: 12 }}>
+        <input className="fullname" value={fullName} onChange={e => setFullName(e.target.value)} placeholder="Full name" />
         {" "}
-        <input value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" />
+        <input className="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" />
         {" "}
-        <button type="submit">Add</button>
+        <button className="add-button" type="submit">Add</button>
       </form>
 
       <ul>

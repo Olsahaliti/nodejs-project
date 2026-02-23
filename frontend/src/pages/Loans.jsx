@@ -42,7 +42,7 @@ function Loans() {
       <h2>🔄 Loans</h2>
 
       <form className="form" onSubmit={borrowBook}>
-        <select value={studentId} onChange={(e) => setStudentId(e.target.value)}>
+        <select  value={studentId} onChange={(e) => setStudentId(e.target.value)}>
           <option value="">Select student</option>
           {students.map((s) => (
             <option key={s._id} value={s._id}>
@@ -60,7 +60,7 @@ function Loans() {
           ))}
         </select>
 
-        <button>Borrow</button>
+        <button class="borrow-button">Borrow</button>
       </form>
 
       <table className="table">
